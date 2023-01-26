@@ -15,6 +15,6 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "md_table_prettyprint": "^1.0.1"
+    "md_table_prettyprint": "^1.0.2"
   }
 }
