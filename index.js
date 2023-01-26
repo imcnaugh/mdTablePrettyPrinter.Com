@@ -6,5 +6,3 @@ function pretty() {
 }
 
 document.getElementById("prettyPrintButton").addEventListener("click", pretty)
-
-module.exports = pretty
