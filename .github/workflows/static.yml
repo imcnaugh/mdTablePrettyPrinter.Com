@@ -33,4 +33,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
         with:
-          artifact-name: 'artifact'
+          artifact_name: 'artifact'
