@@ -27,12 +27,14 @@ jobs:
           npm run build
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: test
         run: |
           npm run test
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: 'Upload Artifact'
         uses: actions/upload-pages-artifact@v1
