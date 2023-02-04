@@ -25,6 +25,12 @@ jobs:
         run: |
           npm ci
           npm run build
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: 'dist/'
+          retention-days: 5
   deploy:
     needs: build
     environment:
@@ -36,8 +42,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          path: '/dist'
 
 
 
