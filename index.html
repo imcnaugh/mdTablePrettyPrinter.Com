@@ -2,23 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>MD Table Pretty Printer</title>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="24f9f1e3-cf34-4b2f-937c-0ca7af3a77ed"></script>
     </head>
     <body>
         <h1>Markdown Table Pretty Printer</h1>
-        This little tool will pretty print your Markdown tables!
-        </br>
-        For more on markdown files read <a href="https://www.markdownguide.org/getting-started/">here</a>, or <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a> for a handy markdown cheat sheet.
-        </br>
-        </br>
-
+        <p>
+            This little tool will pretty print your Markdown tables!
+            <br/>
+            For more on Markdown files read <a href="https://www.markdownguide.org/getting-started/">here</a>, or <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a> for a handy Markdown cheat sheet.
+        </p>
         <textarea id="textArea" rows="30" cols="100" style="font-family: monospace; overflow: auto;" wrap="off">
 Col1 | Col2 | Col3
 --- | :-: | --: |
 1 |2 | 3
 super unreadable| data point| who needs formatting anyways?
         </textarea>
-        </br>
         <button type="button" id="prettyPrintButton">pretty print</button>
         <div style="position: fixed; bottom: 0; width: 100%;">
             <ul style="list-style-type: none;">
@@ -26,15 +25,4 @@ super unreadable| data point| who needs formatting anyways?
             </ul>
         </div>
     </body>
-<!--
-I have moved this from an AWS s3 bucket to a github pages site, but the routing is all messed up
-So some of my old resumes might have broken links, Im doing what I can to fix them, but digging around
-github documentation for how to configure a AWS route 53 A record, seems to be a bit of a pain.
-
-So things are a bit broken, I would worry more if I hadn't wrote a script to call the node pretty print
-library im using and pretty print any tables I have right on my computer, making this site a bit redundant
-for me. But i suppose its all good practice with github actions and pages.
-
-Someday the routing might be fixed, but today is not that day. please forgive the inconvenience.
--->
 </html>
